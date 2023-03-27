@@ -172,14 +172,67 @@
 
 /*add responsive media quaries*/
 
-@media screen and (max-width:50px){
-    .container{
-        width: 10%;
-    }
-}
+@media (max-width : 767px)
 
-@media screen and (max-width:50px){
-    .container{
-        width: 10%;
+{
+    .container
+    {
+        width: 300;
+        height: auto;
+        flex-direction: column;
+        padding-bottom: 70px;
     }
+    .container form
+    {
+        background: transparent;
+        height: 60px;
+        transform: translateY(-30px);
+    }
+    .container form .inputBox
+    {
+        margin-top: 20px;
+    }
+    .container form .inputBox span
+    {
+        display: block;
+        color: #999;
+        padding-bottom: 5px;
+    }
+    .container form .inputBox input,
+    .container form .inputBox select
+    {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        border:1px solid rgba(0,0,0,.3);
+        color:#444;
+    }
+    .container form .flexbox
+    {
+        display: flex;
+        gap:15px;
+    }
+    .container form .flexbox .inputBox
+    {
+        flex:1 1 150px;
+    }
+    .container form .submit-btn
+    {
+        width: 100%;
+        background:linear-gradient(45deg, lightgreen, green);
+        margin-top: 20px;
+        padding: 10px;
+        font-size: 20px;
+        color: #fff;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .2s linear;
+    }
+    .container .card-container
+    {
+        margin-bottom: -150px;
+        position: relative;
+        height: 240px;
+        width: 350px;
+    } 
 }
